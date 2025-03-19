@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan's birthday</title>
+    <script>
+        function checkPassword(page){
+            const passwords={
+                "p1":"3264",
+                "p2":"20050326",
+                "p3":"0601",
+
+            };
+            let input = prompt("Please enter the passwords:");
+            if(input == passwords[page]){
+                window.location.href = page +".html";
+            }
+            else if(input !== null){
+                alert("Error!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>首頁</h1>
+    <ul>
+        <li><a href = "#" onclick ="checkPassword('p1')">禮物說明</a></li>
+        <li><a href = "#" onclick ="checkPassword('p1')">卡片</a></li>
+        <li><a href = "#" onclick ="checkPassword('p1')">禮物</a></li>
+    </ul>
+</body>
+</html>
